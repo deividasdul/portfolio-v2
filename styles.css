@@ -119,6 +119,18 @@ body {
   gap: 30px;
 }
 
+@media (max-width: 1400px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .skill-card {
   background-color: #98abee;
 
@@ -200,6 +212,12 @@ ol li {
   gap: 50px;
 
   margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project-card {
