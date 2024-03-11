@@ -1,12 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
 }
 
 body {
   width: 100%;
-  min-height: 200vh;
+  min-height: 100vh;
 
   padding-top: 200px;
 
@@ -16,12 +17,22 @@ body {
   flex-direction: column;
 }
 
+.section-title:not(.sub-title) {
+  font-size: 40px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 40px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: bold;
+}
+
 #header {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-size: 24px;
 
   background-color: #201658;
 
@@ -32,50 +43,45 @@ body {
   top: 0;
 }
 
-nav {
+#navbar {
   display: flex;
   gap: 20px;
 }
 
 .nav-link {
-  color: #98ABEE;
-
-  border-radius: 5px;
+  color: #98abee;
 
   text-decoration: none;
 
   font-family: "Libre Baskerville", serif;
   font-weight: bold;
+  font-size: 24px;
+
+  transition: all 0.15s;
 }
 
-a:hover {
+.nav-link:hover {
   text-decoration: underline;
 
-  color: #F9E8C9;
+  color: #f9e8c9;
 }
 
 #hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 30px;
 
   padding: 10px;
   margin-bottom: 100px;
-  
-  box-shadow: 0px 1px 20px #1D24CA;
+
+  box-shadow: 0px 1px 20px #000000;
 }
 
-#name, h2 {
+#author {
   font-family: "Libre Baskerville", serif;
   font-size: 64px;
   font-weight: bold;
-}
-
-#profession {
-  font-size: 32px;
-  font-family: "League Spartan", sans-serif;
 }
 
 #image {
@@ -83,10 +89,7 @@ a:hover {
   width: 10%;
 }
 
-#about {
-  display: flex;
-  justify-content: center;
-
+#about-me {
   text-align: center;
 
   font-family: "League Spartan", sans-serif;
@@ -94,51 +97,42 @@ a:hover {
 
   width: 300px;
 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #skills {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 30px;
 
   padding: 10px;
   margin-bottom: 100px;
   scroll-margin-top: 160px;
-  
-  box-shadow: 0px 1px 20px #1D24CA;
+
+  box-shadow: 0px 1px 20px #000000;
 }
 
-.grid {
+.skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
-.card {
-  background-color: #98ABEE;
+.skill-card {
+  background-color: #98abee;
+
+  border-radius: 15px;
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   gap: 15px;
 
   width: 400px;
   height: 400px;
 
-  margin-bottom: 20px;
-}
-
-.card li {
-    font-family: "League Spartan", sans-serif;
-    text-align: center;
-
-    list-style: none;
-
-    padding: 10px;
+  margin-bottom: 10px;
 }
 
 .skill-title {
@@ -147,18 +141,84 @@ a:hover {
   font-weight: bold;
 }
 
+.skill-card li {
+  font-family: "League Spartan", sans-serif;
+  text-align: center;
+
+  list-style: inside;
+
+  padding: 10px;
+}
+
 #experiences {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  
-    padding: 10px;
-    scroll-margin-top: 160px;
-    margin-bottom: 100px;
-    
-    box-shadow: 0px 1px 20px #1D24CA;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  padding: 10px;
+  scroll-margin-top: 160px;
+  margin-bottom: 100px;
+
+  text-align: center;
+  list-style: inside;
+
+  box-shadow: 0px 1px 20px #000000;
+}
+
+.experience-title {
+  font-weight: bold;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+
+  margin-bottom: 20px;
+}
+
+ol p,
+ol li {
+  font-family: "League Spartan", sans-serif;
+
+  margin-top: 10px;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  padding: 10px;
+  scroll-margin-top: 160px;
+  margin-bottom: 100px;
+
+  box-shadow: 0px 1px 20px #000000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+
+  margin-bottom: 10px;
+}
+
+.project-card {
+  width: 400px;
+  height: 400px;
+
+  transition: all 0.25s;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+.project-img {
+  max-width: 100%;
+  max-height: 100%;
+
+  border-radius: 15px;
+  border: solid 10px silver;
 }
 
 #interests {
@@ -171,8 +231,19 @@ a:hover {
   padding: 10px;
   scroll-margin-top: 160px;
   margin-bottom: 100px;
-  
-  box-shadow: 0px 1px 20px #1D24CA;
+
+  box-shadow: 0px 1px 20px #000000;
+}
+
+#interests > p,
+#intersts a {
+  font-family: "League Spartan", sans-serif;
+  line-height: 20px;
+  text-align: center;
+
+  width: 300px;
+
+  margin-bottom: 10px;
 }
 
 #footer {
@@ -180,11 +251,10 @@ a:hover {
 
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 10px;
-  
+
   background-color: #201658;
-  color: #F9E8C9;
+  color: #f9e8c9;
 
   font-family: "Libre Baskerville", serif;
   font-size: 20px;

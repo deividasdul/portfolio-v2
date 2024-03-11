@@ -17,37 +17,41 @@
   </head>
 
   <body>
-
     <!-- Fixed Header -->
     <section>
       <header id="header">
-        <nav>
+        <nav id="navbar">
           <a class="nav-link" href="#top">Home</a>
           <a class="nav-link" href="#skills">Skills</a>
           <a class="nav-link" href="#experiences">Experiences</a>
-          <a class="nav-link" href="#">Interests</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#interests">Interests</a>
         </nav>
       </header>
     </section>
 
     <!-- Hero -->
     <section id="hero">
-      <h1 class="info" id="name">Deividas Dulinskas</h1>
-      <h2 id="profession">Full-Stack Web Developer</h2>
+      <h1 id="author">Deividas Dulinskas</h1>
+      <h2 class="section-title sub-title">Full-Stack Web Developer</h2>
       <img
         id="image"
         src="./assets/images/image-of-myself.jpg"
         alt="image of me"
       />
-      <p id="about">Aspiring Full-Stack Web Developer at Kaunas University of Applied Sciences, seeking proficiency in HTML/CSS & JavaScript. Eager to learn new frameworks and technologies, and collaborate to expand skills.</p>
+      <p id="about-me">
+        Aspiring Full-Stack Web Developer at Kaunas University of Applied
+        Sciences, seeking proficiency in HTML/CSS & JavaScript. Eager to learn
+        new frameworks and technologies, and collaborate to expand skills.
+      </p>
     </section>
 
     <!-- Skills -->
     <section id="skills">
-      <h2>Skills:</h2>
+      <h2 class="section-title">Skills:</h2>
 
-      <div class="grid">
-        <div class="card">
+      <div class="skills-grid">
+        <div class="skill-card">
           <img src="./assets/images/icons8-html5-144.png" />
           <h3 class="skill-title">HTML5:</h3>
           <ul>
@@ -57,7 +61,7 @@
           </ul>
         </div>
 
-        <div class="card">
+        <div class="skill-card">
           <img src="./assets/images/icons8-css3-144.png" />
           <h3 class="skill-title">CSS3:</h3>
           <ul>
@@ -67,7 +71,7 @@
           </ul>
         </div>
 
-        <div class="card">
+        <div class="skill-card">
           <img src="./assets/images/icons8-bootstrap-144.png" />
           <h3 class="skill-title">Bootstrap:</h3>
           <ul>
@@ -77,17 +81,84 @@
           </ul>
         </div>
       </div>
-  
     </section>
 
     <!-- Experiences -->
     <section id="experiences">
-      <h2>Experiences:</h2>
+      <h2 class="section-title">Experiences:</h2>
+      <ol>
+        <li class="experience-title">Web Software Engineer</li>
+        <p>MB Timitis - Intership</p>
+        <p>Oct 2023 - Jan 2024 - 4 months</p>
+        <p>
+          Constructed a website from inception utilizing<br />
+          WordPress alongside HTML, CSS, PHP, JavaScript<br />
+          and Python
+        </p>
+      </ol>
+
+      <h2 class="section-title">Educaton:</h2>
+      <ol>
+        <li>2008-2012 | Primary School</li>
+        <li>2012-2016 | Secondary School</li>
+        <li>2016-2020 | High School</li>
+        <li>2021-2025 | College</li>
+      </ol>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="section-title">Projects:</h2>
+      <div class="grid-container">
+        <div class="project-card">
+          <a href="#"
+            ><img
+              class="project-img"
+              src="./assets/images/project-placeholder.jpg"
+              alt="first project"
+          /></a>
+        </div>
+        <div class="project-card">
+          <a href="#"
+            ><img
+              class="project-img"
+              src="./assets/images/project-placeholder.jpg"
+              alt="first project"
+          /></a>
+        </div>
+        <div class="project-card">
+          <a href="#"
+            ><img
+              class="project-img"
+              src="./assets/images/project-placeholder.jpg"
+              alt="first project"
+          /></a>
+        </div>
+        <div class="project-card">
+          <a href="#"
+            ><img
+              class="project-img"
+              src="./assets/images/project-placeholder.jpg"
+              alt="first project"
+          /></a>
+        </div>
+      </div>
     </section>
 
     <!-- Interests -->
     <section id="interests">
-      <h2>Interests:</h2>
+      <h2 class="section-title">Interests:</h2>
+      <p>
+        I'm passionate about web development, from crafting user-friendly
+        interfaces to mastering the latest technologies like HTML, CSS, and
+        JavaScript. I'm eager to explore the creative and dynamic aspects of
+        this field and contribute to building innovative digital experiences.
+      </p>
+      <p>
+        If you'd like to contact me, you can email me at
+        <a href="mailto:deividas.dul@gmai.com">deividas.dul@gmail.com</a>
+        or reach out via LinkedIn below!
+      </p>
     </section>
 
     <!-- Footer -->
@@ -95,8 +166,12 @@
       <footer>
         <p>© 2024 Deividas Dulinskas</p>
         <div class="flex-container">
-          <a href="https://github.com/deividasdul"><img src="./assets/images/icons8-github-50.png" /></a>
-          <a href="https://www.linkedin.com/in/deividas-dulinskas/"><img src="./assets/images/icons8-linkedin-50.png" /></a>
+          <a href="https://github.com/deividasdul"
+            ><img src="./assets/images/icons8-github-50.png"
+          /></a>
+          <a href="https://www.linkedin.com/in/deividas-dulinskas/"
+            ><img src="./assets/images/icons8-linkedin-50.png"
+          /></a>
         </div>
       </footer>
     </section>
