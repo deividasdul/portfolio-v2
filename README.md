@@ -1,2 +1,2 @@
-# portfolio_v2
+# portfolio-v2
 Portfolio (Udemy Capstone 2)
